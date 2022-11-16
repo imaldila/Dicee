@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         diceImageView1.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")][leftDiceNumber]
         diceImageView2.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")][rightDiceNumber]
-        leftDiceNumber = leftDiceNumber + 1
-        rightDiceNumber = rightDiceNumber - 1
+        leftDiceNumber += 1
+        rightDiceNumber -= 1
     }
     
 }
